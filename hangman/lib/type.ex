@@ -1,5 +1,5 @@
 defmodule Hangman.Type do
-  @type state :: :initializing | :won | :lost | :good_guess | :bad_guess | :already_use
+  @type state :: :initializing | :won | :lost | :good_guess | :bad_guess | :already_used
 
   @type tally :: %{
           turns_left: integer,
