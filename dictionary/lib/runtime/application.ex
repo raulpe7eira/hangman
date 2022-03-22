@@ -1,6 +1,7 @@
 defmodule Dictionary.Runtime.Application do
   use Application
 
+  @impl true
   def start(_type, _args) do
     children = [
       {Dictionary.Runtime.Server, []}
