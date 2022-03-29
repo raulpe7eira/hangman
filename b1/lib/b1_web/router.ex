@@ -14,10 +14,10 @@ defmodule B1Web.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", B1Web do
+  scope "/hangman", B1Web do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/", HangmanController, :index
   end
 
   # Other scopes may use custom stacks.
