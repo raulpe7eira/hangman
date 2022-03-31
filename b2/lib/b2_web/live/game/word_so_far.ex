@@ -20,8 +20,7 @@ defmodule B2Web.Live.Game.WordSoFar do
       <div class="game-state"><%= state_name(@tally.game_state) %></div>
       <div class="letters">
         <%= for ch <- @tally.letters do %>
-          <% cls = if ch != "_", do: "one-letter correct", else: "one-letter" %>
-          <div class={cls}><%= ch %></div>
+          <div class={classOf(ch)}><%= ch %></div>
         <% end %>
       </div>
     </div>
@@ -31,4 +30,7 @@ defmodule B2Web.Live.Game.WordSoFar do
   defp state_name(state) do
     @states[state] || "Unknown state"
   end
+
+  defp classOf("_"), do: "one-letter correct"
+  defp classOf(_), do: "one-letter"
 end

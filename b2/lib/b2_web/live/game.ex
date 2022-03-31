@@ -20,6 +20,7 @@ defmodule B2Web.Live.Game do
 
   def handle_event("make_move", %{"key" => key}, socket) do
     tally = Hangman.make_move(socket.assigns.game, key)
+
     {:noreply, assign(socket, :tally, tally)}
   end
 end
