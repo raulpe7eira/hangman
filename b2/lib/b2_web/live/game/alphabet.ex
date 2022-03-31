@@ -7,7 +7,7 @@ defmodule B2Web.Live.Game.Alphabet do
 
   def render(assigns) do
     ~H"""
-    <p>alphabet</p>
+    <p>In alphabet</p>
     """
   end
 end
