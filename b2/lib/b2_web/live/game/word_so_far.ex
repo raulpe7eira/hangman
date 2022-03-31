@@ -10,10 +10,6 @@ defmodule B2Web.Live.Game.WordSoFar do
     won: "You won!"
   }
 
-  def mount(socket) do
-    {:ok, socket}
-  end
-
   def render(assigns) do
     ~H"""
     <div class="word-so-far">
@@ -32,5 +28,5 @@ defmodule B2Web.Live.Game.WordSoFar do
   end
 
   defp classOf("_"), do: "one-letter correct"
-  defp classOf(_), do: "one-letter"
+  defp classOf(_ch), do: "one-letter"
 end

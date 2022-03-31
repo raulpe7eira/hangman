@@ -1,5 +1,50 @@
 /* This file is for your main application CSS */
 @import "./phoenix.css";
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+body { font-family: 'Short Stack', cursive; }
+
+/* game structure */
+
+.game-holder {
+  max-height: 70%;
+  margin-top: 15%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.game-holder .figure {
+  flex-basis: 40%;
+  min-width: 400px;
+}
+
+.game-holder .letter-stuff {
+  flex-basis: 40%;
+  display: flex;
+  flex-flow: column;
+}
+
+/* figure component */
+
+.figure svg { max-height: 60vh; }
+
+.turns-left {
+  display: inline-block;
+  position: relative;
+  top: -30vh;
+  margin-right: 20%;
+  max-width: 30%;
+  color: #552244;
+}
+
+.hide-component { opacity: 0.1; }
+svg path { transition: opacity 0.5s; }
+
+/* alphabet component */
 
 .alphabet {
   display: flex;
@@ -12,7 +57,9 @@
 
 .one-letter { color: #8888bb; }
 .one-letter.correct { color: #88bb88; }
-.one-letter.wrong { color: #bb8888; }
+.one-letter.wrong { color: #bb4444; opacity: 20%; }
+
+/* word_so_far component */
 
 .letters .one-letter {
   width: 1em;
