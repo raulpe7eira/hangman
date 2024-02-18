@@ -1,6 +1,6 @@
 # Hangman
 
-This repository is the code corresponding to the [Elixir for Programmers, Second Edition](https://codestool.coding-gnome.com/courses/elixir-for-programmers-2) lab.
+This repository is the code corresponding to the [Elixir for Programmers, Second Edition](https://codestool.coding-gnome.com/courses/elixir-for-programmers-2) lab by [Dave Thomas](https://twitter.com/pragdave).
 
 > There are many components in this repository, all of than focus to build a Hangman Game.
 
